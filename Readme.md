@@ -1,6 +1,7 @@
-pipjs
+#pipjs
 
-#TODO Description
+Description
+Implementation of Perceptually Important Points in javascript.
 
 License 
 
