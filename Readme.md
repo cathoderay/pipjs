@@ -1,6 +1,7 @@
 #pipjs
 
 Description
+
 Implementation of Perceptually Important Points in javascript.
 
 License 
