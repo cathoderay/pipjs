@@ -1,7 +1,7 @@
 
 load('/opt/visionmedia-jspec-df48355/lib/jspec.js')
 load('/opt/visionmedia-jspec-df48355/lib/jspec.xhr.js')
-load('lib/yourlib.js')
+load('lib/pipjs.js')
 load('spec/unit/spec.helper.js')
 
 JSpec

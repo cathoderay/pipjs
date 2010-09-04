@@ -2,7 +2,7 @@
 require.paths.unshift('spec', '/opt/visionmedia-jspec-df48355/lib', 'lib')
 require('jspec')
 require('unit/spec.helper')
-require('yourlib')
+require('pipjs')
 
 JSpec
   .exec('spec/unit/spec.js')

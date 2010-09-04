@@ -1,8 +1,6 @@
 
-describe 'YourLib'
-  describe '.someMethod()'
-    it 'should do something'
-      true.should.be true
-    end
+describe 'test'
+  it 'should do something'
+    alert "asdf"
   end
 end
