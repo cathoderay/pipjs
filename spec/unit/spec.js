@@ -25,6 +25,15 @@ describe 'Pip input errors'
   end
 end
 
+
+describe 'Pip consistency'
+  it 'should return consistent points'
+    input = [[1, 2], [2, 3], [3, 4]]
+    pip(input, 2).should.eql [[1, 2], [3, 4]]
+  end
+end
+
+
 describe 'Euclidean Distance'
   it 'should return 0 for 2 coincident points'
     input = [[1, 1], [1, 1]]
