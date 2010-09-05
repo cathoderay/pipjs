@@ -37,11 +37,15 @@ describe 'Pip consistency'
     pip(input, 10).should.eql input
   end
 
-	it 'should find the [3, 30] as a pip'
-		input = [[1, 2], [2, 10], [3, 30], [4, 10]];
-    pip(input, 3).should.include [[3, 30]]
-	end
+  it 'should find the [3, 30] as a pip'
+    input = [[1, 2], [2, 10], [3, 30], [4, 10]];
+    pip(input, 3).should.include [3, 30]
+  end
 
+  it 'should return the original, because n = input.length'
+    input = [[1, 2], [2, 10], [3, 30], [4, 10]];
+    pip(input, 4).should.eql input
+  end
 end
 
 
