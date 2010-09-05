@@ -28,9 +28,20 @@ end
 
 describe 'Pip consistency'
   it 'should return consistent points'
-    input = [[1, 2], [2, 3], [3, 4]]
+    input = [[1, 2], [2, 3], [3, 4]];
     pip(input, 2).should.eql [[1, 2], [3, 4]]
   end
+
+  it 'should return the input if n gte length of input'
+    input = [[1, 2], [4, 34], [5, 6], [7, 9], [1, 2]]
+    pip(input, 10).should.eql input
+  end
+
+	it 'should find the [3, 30] as a pip'
+		input = [[1, 2], [2, 10], [3, 30], [4, 10]];
+    pip(input, 3).should.include [[3, 30]]
+	end
+
 end
 
 
